@@ -136,7 +136,7 @@ p {
   -ms-transition: background-color .2s ease-out;
   transition: background-color .2s ease-out;
 }
-.tile .inner { 
+.tile .inner {
   background-color: #2a2a2a;
 }
 
@@ -222,10 +222,10 @@ p {
   color: transparent;
 }
 #title * {
-  -webkit-transition: color 1s ease-out 1s;
-  -moz-transition: color 1s ease-out 1s;
-  -ms-transition: color 1s ease-out 1s;
-  transition: color 1s ease-out 1s;
+  -webkit-transition: color 1s ease-out 1s, background-color ease-out 1s;
+  -moz-transition: color 1s ease-out 1s, background-color ease-out 1s;
+  -ms-transition: color 1s ease-out 1s, background-color ease-out 1s;
+  transition: color 1s ease-out 1s, background-color ease-out 1s;
 }
 html body .show01 .tile .inner,
 html body .show01 .tile .inner:after {
@@ -253,7 +253,7 @@ html body .show01 .tile .inner:after {
 }
 #digits #zero { position: absolute; left: 0; top: 0; width: 50%; height: 100%;}
 #digits #one { position: absolute; right: 0; top: 0; width: 50%; height: 100%;}
-#digits #hs { 
+#digits #hs {
   color: #fff; padding-left: 3%;
   text-shadow: 0 0 10px transparent;
   -webkit-transition: color 1s ease-out;
@@ -262,8 +262,8 @@ html body .show01 .tile .inner:after {
   transition: all 1s ease-out;
 }
 .show01 #digits #zero,
-.show01 #digits #one { 
-  color: #fff; 
+.show01 #digits #one {
+  color: #fff;
   -webkit-transition: color 1s ease-out;
   -moz-transition: color 1s ease-out;
   -ms-transition: color 1s ease-out;
@@ -271,8 +271,8 @@ html body .show01 .tile .inner:after {
 }
 .hide0 #digits #zero { color: transparent; }
 .hide1 #digits #one { color: transparent; }
-.hidehs #digits #hs { 
-  color: transparent; 
+.hidehs #digits #hs {
+  color: transparent;
   -webkit-transition: color .1s ease-out;
   -moz-transition: color .1s ease-out;
   -ms-transition: color .1s ease-out;
@@ -280,8 +280,8 @@ html body .show01 .tile .inner:after {
 }
 
 
-.tile.marked .inner { 
-  border: solid #fff 3px; 
+.tile.marked .inner {
+  border: solid #fff 3px;
   -webkit-animation: flash 2s ease-in-out infinite;
   -moz-animation: flash 2s ease-in-out infinite;
   -ms-animation: flash 2s ease-in-out infinite;
